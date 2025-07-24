@@ -1,0 +1,56 @@
+.motorcycle_box {
+	.motorcycle_tab {
+		background: #fff;
+		border-top: 1px solid #f1f1f1;
+		padding: 0 80px;
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+		overflow: hidden;
+		position: relative;
+		z-index: 1;
+		display: flex;
+	}
+	.product_name {
+		display: inline-block;
+		padding: 25px;
+		font-size: 18px;
+		text-decoration: none;
+		color: #7e7e7e;
+		position: relative;
+		cursor: pointer;
+		&::before {
+			content: "";
+			opacity: 0;
+			display: block;
+			width: 17px;
+			height: 17px;
+			background: #e8e8e8;
+			position: absolute;
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+			bottom: -10px;
+			top: auto;
+			z-index: 1;
+			transition: all 0.25s ease;
+			transform: rotate(45deg);
+		}
+		&:hover,
+		&.active {
+			color: #ed1a29;
+			font-weight: 700;
+		}
+		&.active,
+		&:hover {
+			&::before {
+				opacity: 1;
+			}
+		}
+	}
+	.motor_list {
+		background: #f2f2f2;
+		height: auto;
+		min-height: inherit;
+		position: relative;
+		padding: 20px 50px;
+	}
+}

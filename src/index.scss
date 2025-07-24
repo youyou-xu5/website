@@ -1,0 +1,39 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  /* 告诉浏览器当前页面支持浅色和深色两种配色方案，浏览器会根据用户系统偏好自动切换。 */
+  color-scheme: light dark;
+/* 这有助于浏览器自动调整表单控件、滚动条等系统元素的颜色风格。 */
+  color: rgba(255, 255, 255, 0.87);
+  /* 禁止浏览器合成字体的粗体或斜体效果，保证字体显示更纯粹。 */
+  font-synthesis: none; 
+  /* 优化文本的可读性，启用连字和更好的字体渲染。 */
+  text-rendering: optimizeLegibility; 
+  /* 在Webkit内核浏览器（如Safari、Chrome）中启用抗锯齿，使字体更平滑。 */
+  -webkit-font-smoothing: antialiased; 
+  /* 在Mac OS的Firefox浏览器中启用灰度抗锯齿，提升字体显示效果。 */
+  -moz-osx-font-smoothing: grayscale; 
+  --mainColor:#ff0000;
+}
+html{
+  font-size: 192px;
+}
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+//当用户的系统或浏览器偏好“浅色模式
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}

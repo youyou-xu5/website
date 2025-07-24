@@ -1,0 +1,22 @@
+#app {
+	max-width: 100%;
+	width: 100%;
+}
+
+.inner {
+	/* max-width: 80%; */
+
+	margin-left: auto;
+	margin-right: auto;
+	height: 100%;
+}
+.fsc {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.fcc {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
