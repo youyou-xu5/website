@@ -4,6 +4,7 @@ import { fileURLToPath, URL } from "node:url";
 import postCssPxToRem from "postcss-pxtorem";
 
 export default defineConfig({
+	base: "/website/",
 	plugins: [react()],
 	resolve: {
 		alias: {
